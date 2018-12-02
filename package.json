@@ -20,7 +20,8 @@
   },
   "homepage": "https://github.com/jdusome/comp2112-presentation-base#readme",
   "dependencies": {
-    "electron": "^3.0.10"
+    "electron": "^3.0.10",
+    "vue": "^2.5.17"
   },
   "devDependencies": {
     "electron-packager": "^12.2.0"
