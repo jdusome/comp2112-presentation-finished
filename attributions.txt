@@ -1,0 +1,17 @@
+Authors:
+Joshua Dusome
+Matt Kean
+Andre ...
+
+Project Attributions:
+
+General: https://www.youtube.com/watch?v=kN1Czs0m1SU
+Packaging: https://www.christianengvall.se/electron-packager-tutorial/
+
+Image Attributions:
+
+Icon: Calculator Icon
+Artist: Wallec
+Iconset: Android Style Honeycomb Icons (18 icons)
+License: CC Attribution-Noncommercial-No Derivate 4.0
+Commercial usage: Not allowed

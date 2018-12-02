@@ -62,7 +62,7 @@ const menuTemplate = [
 const { app, BrowserWindow, Menu } = electron;
 
 //Set Environment 
-process.env.NODE_ENV = 'development';
+process.env.NODE_ENV = 'production';
 
 //App Ready
 app.on('ready', function () {

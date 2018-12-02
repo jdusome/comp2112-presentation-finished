@@ -1,6 +1,16 @@
-/**
- * Calculator App
- */
+/*
+//================================================================================
+// Variables
+//================================================================================
+*/
+const electron = require('electron');
+const { ipcRenderer } = electron;
+
+/*
+//================================================================================
+// Calculator App
+//================================================================================
+*/
 const app = new Vue({
 
     el: "#calc",
@@ -10,7 +20,14 @@ const app = new Vue({
         result: undefined,
         resultLength: 0,
         selection: 1,
+        theme: "dark",
         operator: undefined
+    },
+    mounted() {
+
+        //Setup Theme Event Listener
+        ipcRenderer.on("main:switch-theme", this.switchTheme);
+
     },
     methods: {
         /**
@@ -155,6 +172,16 @@ const app = new Vue({
                     }
                     break;
             }
+        },
+
+        /**
+         * This function is used to set the calculator theme.
+         * @param {String} theme - This is the theme that will be applied to the calculator
+         */
+        switchTheme(sender, theme){
+            
+            //Assign New Theme
+            this.theme = theme;
         }
     }
 });
