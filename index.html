@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+</head>
+<body>
+    <!-- Outer Container -->
+    <main class="container">
+        <!-- Fixed Width Calculator -->
+        <section class="dark" id="calc">
+
+            <!-- Display -->
+            <div class="display">
+                <div class="calculation">{{ number1 || "" }}</div>
+                <div class="calculation"><span class="operator">{{operator || ""}}</span>{{ number2 || "" }}</div>
+                <div class="answer" v-bind:class="{ small: resultLength > 10}">{{ result || "" }}</div>
+            </div>
+
+            <!-- Numpad -->
+            <div class="numpad">
+                <button class="btn" @click="clear" data-operation="CE">CE</button> <!-- Clear Everything -->
+                <button class="btn" @click="clear" data-operation="C">C</button> <!-- Clear Current Line -->
+                <button class="btn" @click="clear" data-operation="DEL">DEL</button> <!-- Undo Last Character / Backspace -->
+                <button class="btn inactive"></button>
+                <button class="btn" @click="inputNumber" data-number="7">7</button>
+                <button class="btn" @click="inputNumber" data-number="8">8</button>
+                <button class="btn" @click="inputNumber" data-number="9">9</button>
+                <button class="btn" @click="assignOperator" data-operator="/">%</button>
+                <button class="btn" @click="inputNumber" data-number="4">4</button>
+                <button class="btn" @click="inputNumber" data-number="5">5</button>
+                <button class="btn" @click="inputNumber" data-number="6">6</button>
+                <button class="btn" @click="assignOperator" data-operator="*">x</button>
+                <button class="btn" @click="inputNumber" data-number="1">1</button>
+                <button class="btn" @click="inputNumber" data-number="2">2</button>
+                <button class="btn" @click="inputNumber" data-number="3">3</button>
+                <button class="btn" @click="assignOperator" data-operator="-">-</button>
+                <button class="btn" @click="inputNumber" data-number="0">0</button>
+                <button class="btn btn-lrg" @click="calculate">=</button>
+                <button class="btn" @click="assignOperator" data-operator="+">+</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.11/lodash.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+    <!-- Main Script -->
+    <script src="scripts/calc.js"></script>
+</body>
+</html>

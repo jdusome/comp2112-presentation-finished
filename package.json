@@ -1,0 +1,23 @@
+{
+  "name": "electron-calc",
+  "version": "1.0.0",
+  "description": "This is a simple calculater that utilizes VueJS and Electron",
+  "main": "scripts/main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jdusome/comp2112-presentation-base.git"
+  },
+  "author": "Joshua Dusome",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jdusome/comp2112-presentation-base/issues"
+  },
+  "homepage": "https://github.com/jdusome/comp2112-presentation-base#readme",
+  "dependencies": {
+    "electron": "^3.0.10"
+  }
+}

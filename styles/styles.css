@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron:400,500,700');
+
+html {
+    width: 100%;
+    display: block;
+    background: #eaeaea;
+}
+
+main > section {
+    display: block;
+    margin: 50px auto;
+    width: 300px;
+    height: auto;
+    border: 1px solid red;
+    border-radius: 2%;
+    padding:  25px 50px;
+    box-shadow: -2px 2px 20px #000;
+    background: #eee;
+}
+
+div.display {
+    font-family: Orbitron, sans-serif;
+    display: block;
+    border: 2px solid #000;
+    width: 87%;
+    margin: 20px auto 20px;
+    padding: 5px 15px;
+    border-radius: 6px;
+}
+
+div.display > div.input {
+    font-weight: 500;
+    font-size: 30px;
+    text-align: right;
+    min-height: 35px;
+}
+div.display > div.calculation {
+    font-weight: 400;
+    font-size: 25px;
+    text-align: right;
+    min-height: 31px;
+    position: relative;
+}
+div.display > div.answer {
+    font-weight: 700;
+    font-size: 35px;
+    border-top: 2px solid #000;
+    text-align: right;
+    min-height: 43px;
+}
+
+div.display > div.answer.small {
+    font-weight: 400;
+    font-size: 25px;
+}
+
+div.display > div.calculation > span.operator {
+    position: absolute;
+    left: 10px;
+}
+
+div.numpad {
+    display: flex;
+    max-width: 300px;
+    flex-wrap: wrap
+}
+
+.btn {
+    width: 70px;
+    height: 70px;
+    border-radius: 25%;
+    background: none;
+    border: 2px solid red;
+    font-size: 22px;
+    margin: 2px;
+    font-family: Orbitron, sans-serif;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: aqua;
+}
+.btn:focus {
+    background-color: aqua;
+}
+
+.inactive, .inactive:hover, .inactive:focus {
+    background: gray;
+    border: none;
+}
+
+.btn-lrg {
+    width: 144px;
+    border-radius: 10%;
+}
+
+
+
+/*=====================================================================
+ Light Theme
+ ==================================================================== */
+
+main > section.light {
+    border: 1px solid #7f7f7f;
+    background: #eee;
+}
+
+section.light > div.display {
+    border: 2px solid #7f7f7f;
+}
+
+section.light > div.display > div.answer {
+    border-top: 2px solid #000;
+    color: #000;
+}
+
+section.light > .numpad > .btn {
+    border: 2px solid #7f7f7f;
+}
+
+section.light > .numpad > .btn:hover {
+    background-color: #cbcbcb;
+}
+section.light > .numpad > .btn:focus {
+    background-color: #cbcbcb;
+}
+
+section.light > .numpad > .inactive, .inactive:hover, .inactive:focus {
+    background: gray;
+}
+
+
+/*=====================================================================
+ Dark Theme
+ ==================================================================== */
+ 
+main > section.dark {
+    border: 1px solid #000;
+    background: #222;
+}
+
+section.dark > div.display {
+    border: 2px solid #000;
+    background: #146800;
+}
+
+section.dark > div.display > div.answer {
+    border-top: 2px solid #000;
+    color: #000;
+}
+
+section.dark > .numpad > .btn {
+    border: 2px solid #000;
+    background: #3b3b3b;
+}
+
+section.dark > .numpad > .btn:hover {
+    background-color: #cbcbcb;
+}
+section.dark > .numpad > .btn:focus {
+    background-color: #cbcbcb;
+}
+
+section.dark > .numpad > .inactive, .inactive:hover, .inactive:focus {
+    background: gray;
+}
+
+
+
+
+ /*=====================================================================
+ Colour Theme
+ ==================================================================== */
+ 
+ main > section.colour {
+    border: 1px solid #000;
+    background: rgb(205,72,107);
+background: linear-gradient(180deg, rgba(205,72,107,1) 0%, rgba(188,42,141,1) 27%, rgba(0,212,255,1) 100%);
+}
+
+section.colour > div.display {
+    border: 2px solid #fff;
+    background: rgba(0,212,255,1);
+}
+
+section.colour > div.display > div.answer, section.colour > div.display > div.calculation, section.colour > div.display > div.input {
+    color: #fff;
+}
+section.colour > div.display > div.answer {
+    border-top: 2px solid #fff;
+    color: #fff;
+}
+
+section.colour > .numpad > .btn {
+    border: 2px solid #000;
+    background: #fbad50;
+}
+
+section.colour > .numpad > .btn:hover {
+    background-color: #cbcbcb;
+}
+section.colour > .numpad > .btn:focus {
+    background-color: #cbcbcb;
+}
+
+section.colour > .numpad > .inactive, .inactive:hover, .inactive:focus {
+    background: #8a3ab9;
+    border: none;
+}
