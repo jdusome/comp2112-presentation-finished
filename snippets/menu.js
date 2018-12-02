@@ -1,5 +1,3 @@
-# Menu Template
-
 //Menu
 const menuTemplate = [
     {
@@ -41,10 +39,3 @@ const menuTemplate = [
         ]
     }
 ];
-
-
-#Package Scripts
-
-"package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=assets/icons/mac/icon.icns --prune=true --out=release-builds",
-"package-win": "electron-packager . electron-calc --overwrite --asar=true --platform=win32 --arch=ia32 --icon=assets/icons/win/icon.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"Simple Calculator Tutorial App\"",
-"package-linux": "electron-packager . electron-calc --overwrite --asar=true --platform=linux --arch=x64 --icon=assets/icons/png/icon.png --prune=true --out=release-builds"
