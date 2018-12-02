@@ -15,3 +15,6 @@ Artist: Wallec
 Iconset: Android Style Honeycomb Icons (18 icons)
 License: CC Attribution-Noncommercial-No Derivate 4.0
 Commercial usage: Not allowed
+
+Font Attribution:
+Orbitron: 
